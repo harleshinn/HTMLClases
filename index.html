@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Learning Site</title>
+	<link href='http://fonts.googleapis.com/css?family=Glass+Antiqua' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+	
+	<header>
+		<nav class="left-nav">
+			<ul>
+				<li><a href="#intro">Main</a></li>
+				<li><a href="#products">Cupcakes</a></li>
+				<!--
+				<li><a href="#macaron">Macarons</a></li>
+				-->
+			</ul>
+		</nav>
+		<div class="branding">
+			<a href="#" class="logo"><img src="img/petite-cupcake-min.png" alt="Le Petite Cupcake"></a>
+		</div>
+		<nav class="right-nav">
+			<ul>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#contact" class="contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="intro">
+		<div class="wrapper cf">
+			<p>You are here: <small>Intro</small></p>
+			<div class="cf intro-text">
+				<h1>Our cupcakes are the best</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem, dolore adipisci consectetur expedita numquam necessitatibus distinctio maxime architecto doloribus ipsa sed consequuntur odit vel nisi repellat cum asperiores voluptatum.
+			</p>
+			<figure>
+				<img src="img/choco-cupcake.png" alt="Chocolate Cupcake">
+				<figcaption>Try our delicious cupcakes, place your order <a href="#contact">now!</a></figcaption>
+			</figure>	
+			</div>
+			<video src="video/cupcake.mp4" controls></video>
+			
+		</div>
+	</section>
+
+	<section id="products">
+		<div class="wrapper">
+			<p>You are here: <small>Intro > Products</small></p>
+			<h1>Choose your flavor</h1>
+			<article class="item-prod" data-producto="chocolate-cupcake">
+				<h1>Chocolate cupcake</h1>
+				<figure class="product">
+					<img src="img/choco-cupcake.png" alt="">
+					<figcaption>
+						<p>Scumptious chocolate cupcake topped with chocolate ganache.</p>
+						<span>Price per dozen</span><span>u$$ 80</span>
+					</figcaption>
+				</figure>
+			</article>
+			<article class="item-prod" data-producto="vanilla-cupcake">	
+				<h1>Vanilla Cupcake</h1>
+				<figure class="product">
+					<img src="img/vanilla-cupcake.png" alt="">
+					<figcaption>
+						<p>Scumptious chocolate cupcake topped with chocolate ganache.</p>
+						<span>Price per dozen</span><span>u$$ 80</span>
+					</figcaption>
+				</figure>
+
+			</article>
+		</div>
+	</section>
+	<!--
+	<section id="macaron">
+		<div class="wrapper">
+			<img src="img/perfect-macaron.png" alt="">
+		</div>
+	</section>
+	-->
+	<section id="about">
+		<div class="wrapper">
+			<p>You are here: <small>Intro > About Us</small></p>
+			<article class="about">
+				<h1>Le Petite Cupcake</h1>
+				<span>Lorem ipsum</span>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<figure class="lafotito">
+					<img id="anima" src="img/macarons-2.png" alt="">
+				</figure>
+			</article>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="wrapper">
+			<p>You are here: <small>Intro > Contact Us</small></p>
+			<article>
+				<h1>Contact us now and place your order!</h1>
+			</article>
+			<div class="contact-info">
+				<form action="">
+					<fieldset class="steps">
+						<label for="name"><span>Name</span><input type="text" id="name" required></label>
+						<label for="address"><span>Address</span><input type="text" id="address"></label>
+						<label for="order"><span>Your order</span><textarea id="order"></textarea></label>
+						<button class="submit">Order</button>
+					</fieldset>
+				</form>	
+			</div>
+			<div id="store-location"></div>
+</div>
+			</div>
+	</section>
+	
+	<footer>
+		<small>copyright &copy; 2013 MRM</small>
+	</footer>
+	<!-- Scripts -->
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+</html>

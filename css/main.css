@@ -1,0 +1,212 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+
+
+/**
+ * Site Styles
+ */
+
+html, body {margin: 0; padding: 0; height: 100%;}
+
+header {
+  background: #f7f5eb;
+  padding: .5em 0 .5em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header ul li {
+  display: inline-block;
+  float: left;
+}
+
+.branding {
+  width: 20%;
+  float: left;
+}
+
+.logo {
+  display: block;
+  height: 105px;
+  margin: 2% auto 0 auto;
+  width: 136px;
+}
+
+nav a {
+    color: #1D1D1D;
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 1.200em;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    padding: 0 1.200em;
+    text-decoration: none;
+    text-shadow: #C2C2C2 1px 1px 1px;
+}
+.right-nav,
+.left-nav {
+  float: left;
+  margin: 2em 0 0 0;
+  width: 40%;
+}
+
+section {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+ }
+
+.wrapper {
+  padding: 8em 3em;
+}
+
+
+footer {
+  background: rgba(87, 195, 186, 1);
+}
+
+/*********************************************************\
+      EDITORIAL
+\*********************************************************/
+h1{
+    font-family: 'Glass Antiqua', cursive;
+    text-shadow: #000 1px 1px 1px;
+}
+
+figcaption {
+  font-size: .800em;
+}
+
+/*********************************************************\
+      INTRO PAGE
+\*********************************************************/
+#intro {
+  background: rgba(252, 199, 212, 1);
+}
+
+#intro .intro-text {
+  width: 20em;
+  float: left;
+}
+
+#intro figure,
+#intro video {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+/*********************************************************\
+      ABOUT US PAGE
+\*********************************************************/
+#about {
+  background: rgba(250, 235, 153, 1);
+}
+
+#about:focus{background-color: #ccc;}
+
+#about .lafotito img {
+  position: absolute;
+  right: 12em;
+  -webkit-animation: macaron 1.5s 0; /* Safari 4+ */
+  -moz-animation:    macaron 1.5s 0; /* Fx 5+ */
+  -o-animation:      macaron 1.5s 0; /* Opera 12+ */
+  animation:         macaron 1.5s 0; /* IE 10+ */
+}
+
+/*********************************************************\
+      PRODUCT PAGE
+\*********************************************************/
+#products {
+  background: rgba(226, 235, 152, 1);
+}
+
+.product img {
+  max-width: 100%;
+}
+
+#products .item-prod {
+  width: 22%;
+  float: left;
+}
+
+/*********************************************************\
+      CONTACT PAGE
+\*********************************************************/
+#contact {
+  background: rgba(184, 218, 222, 1);
+ }
+
+#contact .contact-info {
+  width: 26em;
+  float: left;
+}
+
+#contact .steps {
+  border: none;
+}
+
+#contact .steps .submit,
+#contact .steps label {
+  display: block;
+  padding: 5px 0;
+}
+
+#contact .steps textarea,
+#contact .steps input {
+  width: 24em;
+}
+
+#contact .steps textarea {
+  height: 15em;
+}
+
+#contact .steps span {
+  display: inline-block;
+  width: 20%;
+}
+
+#contact .steps .submit {
+  width: 8em;
+  float: right;
+}
+
+#contact #store-location {
+  width: 30em;
+  height: 25em;
+  float: left;
+}
+
+ /* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 1024px) {
+  section {
+    background: #ff0;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 640px) {
+  .wrapper {
+    padding: 8em 1em;
+  }
+
+  section {
+    background: #f0f;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #products .item-prod {
+    width: 100%;
+    float: none;
+  }
+
+}
+
